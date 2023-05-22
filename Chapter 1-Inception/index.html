@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inception</title>
+  </head>
+  <body>
+    <div id="root">
+        <!-- Using HTML -->
+        <!-- <h1>Hello world!</h1> -->
+    </div>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script>
+      //Manipulate HTML DOM Using JS
+      // let heading = document.createElement("h1");
+      // let text = document.createTextNode("Hello world!");
+      // let root = document.getElementById("root");
+      // heading.appendChild(text);
+      // root.appendChild(heading);
+
+      //Manipulate HTML DOM Using React
+
+      //Create Nested React Element
+      const heading1 = React.createElement(
+        "h1",
+        {
+          id: "heading-1",
+        },
+        "Heading 1 using React"
+      );
+
+      const heading2 = React.createElement(
+        "h2",
+        {
+          id: "headng-2",
+        },
+        "Heading 2 using React"
+      );
+
+      const container = React.createElement(
+        "h2",
+        {
+          id: "container",
+        },
+        [heading1, heading2]
+      );
+
+      //create root using createRoot  
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(container);
+    </script>
+  </body>
+</html>
