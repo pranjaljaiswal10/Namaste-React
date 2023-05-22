@@ -14,7 +14,7 @@ dist/
 
 # Package files
 *.jar
-*.prettierc
+*.prettierrc
 
 # Maven
 target/
