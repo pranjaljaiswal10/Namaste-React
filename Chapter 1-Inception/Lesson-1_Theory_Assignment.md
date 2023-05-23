@@ -10,7 +10,7 @@ A: The main difference between a *library* and *framework* is the level of contr
 A:A *content delivery network(CDN)* is a network of server that are distributed around the world to deliver content to end-users more quickly and reliably.
 
 ## Q: Why **React** is known as *React*?
-A:**React** is known as *React* because it uses a --declarative approach-- to building UI.In a declarative programming style, developers describe what they want the program to do, rather than how to do it.
+A:**React** is known as *React* because it uses a **declarative approach** to building UI.In a declarative programming style, developers describe what they want the program to do, rather than how to do it.
 
 ## Q: What is difference between *React* and *ReactDOM*?
 A: Both are JS libraries that are used for building user interfaces, but they serve different purpose.
